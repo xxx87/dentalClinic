@@ -1,0 +1,39 @@
+@keyframes slidy {
+0% { left: 0%; }
+8% { left: 0%; }
+16% { left: -100%; }
+34% { left: -100%; }
+42% { left: -200%; }
+50% { left: -200%; }
+/*42% { left: -300%; }*/
+/*49% { left: -300%; }*/
+58% { left: -200%; }
+66% { left: -200%; }
+74% { left: -100%; }
+82% { left: -100%; }
+91% { left: -0%; }
+100% { left: -0%; }
+}
+div#captioned-gallery {
+  width: 100%;
+  overflow: hidden; 
+  margin:0 auto;
+
+}
+figure.slider { 
+  position: relative; 
+  width: 400%;
+  font-size: 0; 
+  animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 25%; 
+  height: auto;
+  display: inline-block;  
+  position: inherit; 
+}
+figure.slider img { 
+  width: 100%; 
+  height: auto; 
+}
+
